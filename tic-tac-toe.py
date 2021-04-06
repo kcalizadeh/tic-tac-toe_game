@@ -11,7 +11,7 @@ def switch_player(active_player):
 # a function for asking if people want to play against computers or human opponents
 def ask_opponent():
     while 0 == 0:
-        request = input('Would you like to play against the computer (Y/N)? ')
+        request = input('Would you like to play against the computer (Y/N)?')
         if request.lower() == 'y' or request.lower() == 'yes':
             opponent = 'computer'
             break
@@ -27,7 +27,7 @@ def ask_opponent():
 # the actual human player)
 def choose_marker():
     while 0 == 0:
-        choice = input('Would you like to use X or O? Please enter X or O. ')
+        choice = input('Would you like to use X or O? Please enter X or O.')
         if choice.lower() == 'x':
             marker_choice = 'X'
             print(f"You have chosen to use X's. The computer will use O's.\n")
@@ -43,7 +43,7 @@ def choose_marker():
 # a function that takes user input and marks it on the grid
 def make_move(active_player, grid, marker):
     while 0 == 0:
-        move = input("\nEnter the number of the location you'd like to mark. ")
+        move = input("Enter the number of the location you'd like to mark.")
         # check if input is valid
         if move in grid:
             new_grid = re.sub(move, marker, grid)
@@ -108,7 +108,7 @@ def run_game():
     else:
         player, marker = "O's Player", 'O'
     grid = f' 1 | 2 | 3 \n ---------- \n 4 | 5 | 6 \n ---------- \n 7 | 8 | 9'
-    print(f'The {player} will go first.')
+    print(f'The {player} will go first. \n')
 
     # here we make moves until a winner is detected or all the spaces have been used
     turn_count = 0
@@ -119,30 +119,30 @@ def run_game():
         else:
             grid = make_move(player, grid, marker)
         winner = check_winner(player, grid, marker)
+        cleaned_grid = re.sub('\d', ' ', grid)
         if winner == 'winner detected':
             print(f'\nTHE {player.upper()} WINS!')
             if opponent == 'computer' and marker == marker_choice:
                 print('Congratulations, you beat the computer.')
-            print(f'\n{grid}')
+            print(f'\n{cleaned_grid}')
             print('\nThe game has ended.')
             break
         player, marker = switch_player(player)
         turn_count += 1
-        print(f'\n{grid}')
+        print(f'\n{cleaned_grid}')
         if opponent == 'computer' and marker == marker_choice:
             print(f'\nYour turn.')
         else:
             print(f"\n{player}'s turn")
         if turn_count == 9:
-            print("\nIt's a cat's game. \n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
+            print("\n It's a cat's game. \n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
             break
-    again = input('Would you like to play again (Y/N)? ')
+    again = input('Would you like to play again (Y/N)?')
     if again.lower() == 'y' or again.lower() == 'yes':
         run_game()
     else:
         print('Thanks for playing, have a great day!')
 
-# the game with a brief set of instructions for the first game
 def present_and_run_game():
     print('Welcome to Terminal Tic-Tac-Toe!')
     print('In this game, you can play Tic-Tac-Toe in the terminal. The game grid looks like this:\n')
