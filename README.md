@@ -6,6 +6,17 @@ I had a lot of fun building this program. It is always a joy to break down even 
 
 Given more time, I'd like to improve the computer opponent's functionality. Ideally there would be an 'easy mode' option which would be the mode we have now, where the computer just makes moves at random. But tic-tac-toe is a solved game, such that an opponent can always force the game to a draw by just following a relatively simple algorithm. I'd like to set up a 'hard mode' that would have the computer implement that kind of algorithm so that it would be unbeatable (and could even win if given the opportunity). 
 
-I also thought of maybe giving each team some more flavor so that there could be some rudimentary ASCII graphics. Maybe one team is unicorns and the other is dragons and the winning team's creature is displayed when they win. But that would be mostly just for fun :)
+I also thought of maybe giving each team some more flavor so that there could be some rudimentary ASCII graphics in the game. Maybe one team is unicorns and the other is dragons and the winning team's creature is displayed when they win. But that would be mostly just for fun :)
 
 Thanks for taking a look!
+        - Kourosh Alizadeh
+                  
+         \)\_
+        /    '. .---._
+      =P ^     `      '.
+       `--.       /     \
+       .-'(       \      |
+      (.-'   )-..__>   , ;
+      (_.--``    (__.-/ /
+            .-.__.-'.'
+             '-...-'
