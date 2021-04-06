@@ -11,7 +11,7 @@ def switch_player(active_player):
 # a function for asking if people want to play against computers or human opponents
 def ask_opponent():
     while 0 == 0:
-        request = input('Would you like to play against the computer (Y/N)?')
+        request = input('Would you like to play against the computer (Y/N)? ')
         if request.lower() == 'y' or request.lower() == 'yes':
             opponent = 'computer'
             break
@@ -27,7 +27,7 @@ def ask_opponent():
 # the actual human player)
 def choose_marker():
     while 0 == 0:
-        choice = input('Would you like to use X or O? Please enter X or O.')
+        choice = input('Would you like to use X or O? Please enter X or O. ')
         if choice.lower() == 'x':
             marker_choice = 'X'
             print(f"You have chosen to use X's. The computer will use O's.\n")
@@ -43,7 +43,7 @@ def choose_marker():
 # a function that takes user input and marks it on the grid
 def make_move(active_player, grid, marker):
     while 0 == 0:
-        move = input("Enter the number of the location you'd like to mark.")
+        move = input("Enter the number of the location you'd like to mark. ")
         # check if input is valid
         if move in grid:
             new_grid = re.sub(move, marker, grid)
@@ -137,7 +137,7 @@ def run_game():
         if turn_count == 9:
             print("\n It's a cat's game. \n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
             break
-    again = input('Would you like to play again (Y/N)?')
+    again = input('Would you like to play again (Y/N)? ')
     if again.lower() == 'y' or again.lower() == 'yes':
         run_game()
     else:
