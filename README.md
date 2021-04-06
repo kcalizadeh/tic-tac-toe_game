@@ -10,13 +10,3 @@ I also thought of maybe giving each team some more flavor so that there could be
 
 Thanks for taking a look!
         - Kourosh Alizadeh
-                  
-         \)\_
-        /    '. .---._
-      =P ^     `      '.
-       `--.       /     \
-       .-'(       \      |
-      (.-'   )-..__>   , ;
-      (_.--``    (__.-/ /
-            .-.__.-'.'
-             '-...-'
