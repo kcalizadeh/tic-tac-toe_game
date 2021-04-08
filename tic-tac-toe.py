@@ -135,7 +135,7 @@ def run_game():
         else:
             print(f"\n{player}'s turn")
         if turn_count == 9:
-            print("\n It's a cat's game. \n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
+            print("\n It's a cat's game. \n\n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
             break
     while 0 == 0:
         again = input('Would you like to play again (Y/N)? ')
@@ -143,7 +143,7 @@ def run_game():
             run_game()
         if again.lower() == 'n' or again.lower() == 'no':
             print('Thanks for playing, have a great day!')
-            break
+            break        
         else:
             print('Please provide a valid input. \n')
         
