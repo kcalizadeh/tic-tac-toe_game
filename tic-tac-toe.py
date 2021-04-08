@@ -137,11 +137,16 @@ def run_game():
         if turn_count == 9:
             print("\n It's a cat's game. \n      |\      _,,,---,,_\nZZZzz /,`.-'`'    -.  ,_``::,\n     |,4-  ) )-,_. ,\ (  `'-'\n    '---''(_/--'  `-'\_)")
             break
-    again = input('Would you like to play again (Y/N)? ')
-    if again.lower() == 'y' or again.lower() == 'yes':
-        run_game()
-    else:
-        print('Thanks for playing, have a great day!')
+    while 0 == 0:
+        again = input('Would you like to play again (Y/N)? ')
+        if again.lower() == 'y' or again.lower() == 'yes':
+            run_game()
+        if again.lower() == 'n' or again.lower() == 'no':
+            print('Thanks for playing, have a great day!')
+            break
+        else:
+            print('Please provide a valid input. \n')
+        
 
 def present_and_run_game():
     print('Welcome to Terminal Tic-Tac-Toe!')
