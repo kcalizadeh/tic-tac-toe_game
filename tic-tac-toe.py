@@ -45,9 +45,10 @@ def make_move(active_player, grid, marker):
     while 0 == 0:
         move = input("Enter the number of the location you'd like to mark. ")
         # check if input is valid
-        if move in grid:
-            new_grid = re.sub(move, marker, grid)
-            break
+        if move:
+            if move in grid:
+                new_grid = re.sub(move, marker, grid)
+                break
         else:
             print('Please provide a valid input.')
     return new_grid
